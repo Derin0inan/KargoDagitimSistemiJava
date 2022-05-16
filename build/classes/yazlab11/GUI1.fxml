@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: #003333;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yazlab11.GUI1Controller">
+  <tabs>
+    <Tab fx:id="tab1" style="-fx-background-color: #A9A9A9;" text="                        Giriş / Kayıt Ol                        ">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #003333;">
+               <children>
+                  <Label fx:id="girisLabel" layoutX="140.0" layoutY="115.0" text="Giriş" textFill="WHITE" textOverrun="WORD_ELLIPSIS" underline="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <Bloom>
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </Bloom>
+                     </effect>
+                  </Label>
+                  <Label fx:id="yapLabel" layoutX="204.0" layoutY="115.0" text="Yap" textFill="#009999" textOverrun="WORD_ELLIPSIS" underline="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <Bloom>
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </Bloom>
+                     </effect>
+                  </Label>
+                  <TextField fx:id="girisYapMail" layoutX="108.0" layoutY="183.0" prefHeight="25.0" prefWidth="185.0" promptText="Mail">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="girisYapButon" layoutX="108.0" layoutY="305.0" onAction="#giris" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: #009999;" text="Giriş" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="209.0" fitWidth="226.0" layoutX="501.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resimler/motor.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="kayitLabel" layoutX="914.0" layoutY="76.0" text="Kayıt" textFill="WHITE" textOverrun="WORD_ELLIPSIS" underline="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <Bloom>
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </Bloom>
+                     </effect>
+                  </Label>
+                  <Label fx:id="olLabel" layoutX="986.0" layoutY="76.0" text="Ol" textFill="#009999" textOverrun="WORD_ELLIPSIS" underline="true">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <effect>
+                        <Bloom>
+                           <input>
+                              <Lighting>
+                                 <bumpInput>
+                                    <Shadow />
+                                 </bumpInput>
+                                 <light>
+                                    <Light.Distant />
+                                 </light>
+                              </Lighting>
+                           </input>
+                        </Bloom>
+                     </effect>
+                  </Label>
+                  <TextField fx:id="kayitOlAd" layoutX="872.0" layoutY="145.0" prefHeight="25.0" prefWidth="185.0" promptText="Ad">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="kayitOlSoyad" layoutX="872.0" layoutY="199.0" prefHeight="25.0" prefWidth="185.0" promptText="Soyad">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="kayitOlMail" layoutX="872.0" layoutY="250.0" prefHeight="25.0" prefWidth="185.0" promptText="Mail">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="kayitOlButon" layoutX="871.0" layoutY="361.0" onAction="#giris" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: #009999;" text="Kayıt Ol" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="kayitOlHataLabel" layoutX="870.0" layoutY="415.0" prefHeight="21.0" prefWidth="330.0" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="girisYapHataLabel" layoutX="106.0" layoutY="357.0" prefHeight="21.0" prefWidth="333.0" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="hosGeldinizLabel" layoutX="161.0" layoutY="31.0" text="Hoş Geldiniz " textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <Lighting>
+                           <bumpInput>
+                              <Shadow />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant />
+                           </light>
+                        </Lighting>
+                     </effect>
+                  </Label>
+                  <Label fx:id="hosGeldinizAd" layoutX="337.0" layoutY="31.0" prefHeight="45.0" prefWidth="269.0" textFill="#009999">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="cikisYapButon" layoutX="512.0" layoutY="553.0" onAction="#cikis" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: #009999;" text="Çıkış Yap" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="haritalaraGitButon" layoutX="512.0" layoutY="514.0" onAction="#haritayaGit" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: #009999;" text="Haritaya Git" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label layoutX="491.0" layoutY="102.0" text="Hızır Kargo" textFill="#b5b5b5">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <Shadow height="0.0" radius="4.25" width="19.0" />
+                     </effect>
+                  </Label>
+                  <Label layoutX="501.0" layoutY="337.0" opacity="0.54" text="Bizden Hızlısı Mezarda" textFill="#726f6f">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Label>
+                  <PasswordField fx:id="girisYapSifre" layoutX="108.0" layoutY="238.0" promptText="Şifre">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="kayitOlSifre" layoutX="871.0" layoutY="305.0" promptText="Şifre">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <JFXButton fx:id="sifreDegistirButon" layoutX="512.0" layoutY="461.0" onAction="#sifreDegistir" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: #009999;" text="Şifre Değiştir" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="sifreDegistirLabel" layoutX="513.0" layoutY="599.0" prefHeight="21.0" prefWidth="490.0" text=" " textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="sifreDegistir1" layoutX="512.0" layoutY="384.0" promptText="Yeni şifrenizi giriniz">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField fx:id="sifreDegistir2" layoutX="513.0" layoutY="421.0" promptText="Şifre tekrar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+               </children></Pane>
+         </content>
+    </Tab>
+      <Tab fx:id="tab2" style="-fx-background-color: #A9A9A9;" text="                    Kargo Ekle Yazı ile                       ">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #003333;">
+               <children>
+                  <TextField fx:id="kargoEkleKargoAdi" layoutX="32.0" layoutY="320.0" prefHeight="31.0" prefWidth="315.0" promptText="Eklemek istediğiniz kargonun adı">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="musteriEkleButon" layoutX="360.0" layoutY="45.0" onAction="#musteriEkle" prefHeight="79.0" prefWidth="135.0" style="-fx-background-color: #009999;" text="Müşteri Ekle" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <Label fx:id="kargoEkleHataLabel" layoutX="32.0" layoutY="413.0" prefHeight="21.0" prefWidth="553.0" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="musteriEkleHataLabel" layoutX="32.0" layoutY="179.0" prefHeight="21.0" prefWidth="553.0" textFill="RED">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="musteriEkleIlce" layoutX="32.0" layoutY="90.0" prefHeight="31.0" prefWidth="151.0" promptText="İlçe">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="musteriEkleMahalle" layoutX="190.0" layoutY="90.0" prefHeight="31.0" prefWidth="151.0" promptText="Mahalle">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="kargoEkleMusteriID" layoutX="32.0" layoutY="363.0" prefHeight="31.0" prefWidth="316.0" promptText="Müşteri ID">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="musteriEkleMusteriAdi" layoutX="32.0" layoutY="46.0" prefHeight="31.0" prefWidth="316.0" promptText="Müşteri Adı">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <JFXButton fx:id="kargoEkleButon" layoutX="360.0" layoutY="320.0" onAction="#kargoEkle" prefHeight="76.0" prefWidth="135.0" style="-fx-background-color: #009999;" text="Kargo Ekle" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </JFXButton>
+                  <ImageView fitHeight="469.0" fitWidth="484.0" layoutX="585.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../resimler/kargoarabasi.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="699.0" layoutY="335.0" opacity="0.76" prefHeight="36.0" prefWidth="222.0" text="Kargo Bizim İşimiz">
+                     <font>
+                        <Font size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="772.0" layoutY="469.0" text="Hızır Kargo" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                     <effect>
+                        <Shadow height="9.5" radius="6.625" width="19.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Shadow>
+                     </effect>
+                  </Label>
+                  <ScrollPane layoutX="530.0" layoutY="21.0" prefHeight="310.0" prefWidth="634.0">
+                     <content>
+                        <GridPane fx:id="musteriIDSirala" prefHeight="317.0" prefWidth="645.0" style="-fx-background-color: #003333;">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="208.0" minWidth="8.0" prefWidth="98.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="422.0" minWidth="10.0" prefWidth="210.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="375.0" minWidth="10.0" prefWidth="336.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children></Pane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab21" style="-fx-background-color: #A9A9A9;" text="           Kargo Ekle Harita           ">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #003333;" />
+         </content>
+      </Tab>
+      <Tab fx:id="tab3" style="-fx-background-color: #A9A9A9;" text="                 Teslimat Durumu / Kargo Sil                ">
+         <content>
+            <GridPane fx:id="kargoDurumGridPane" style="-fx-background-color: #003333;">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="152.0" minWidth="10.0" prefWidth="152.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="178.0" minWidth="10.0" prefWidth="178.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0" minWidth="0.0" prefWidth="163.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="188.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="668.0" minWidth="10.0" prefWidth="355.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.0" minWidth="10.0" prefWidth="52.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="371.0" minWidth="10.0" prefWidth="127.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label prefHeight="231.0" prefWidth="614.0" text="       Kargo Adı" textFill="#009999" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="231.0" prefWidth="614.0" text="    Müşteri Adı" textFill="#009999" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="231.0" prefWidth="614.0" text="      Kargo Durumu" textFill="#009999" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="231.0" prefWidth="614.0" text="                             Kargo Adresi" textFill="#009999" GridPane.columnIndex="4">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="231.0" prefWidth="614.0" text="     Kargo ID" textFill="#009999">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </content>
+      </Tab>
+      <Tab fx:id="tab4" style="-fx-background-color: #A9A9A9;" text="                    Şu anda Buradasınız                 ">
+         <content>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #003333;" />
+         </content></Tab>
+  </tabs>
+</TabPane>
